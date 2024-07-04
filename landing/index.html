@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anya Apparel</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img class="logo-nav" src="../assets/dipakai/nav/logo.svg"> 
+        <ul>
+            <li class="nav-home"><a href="../landing/index.html">home</a></li>
+            <li class="nav-shop"><a href="../shop/index.html">shop</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="../login/index.html"><img class="nav-login-button" src="../assets/dipakai/nav/icon-orang.svg"></a>
+            <a href="#" class="nav-cart-button"><img src="../assets/dipakai/nav/icon-tas.svg"></a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <section>
+        <!-- Slider Images -->
+        <div class="slide">
+            <img class="anya-jungle" src="../assets/dipakai/landing/anyajungle.png">
+        </div>
+        <div class="slide">
+            <img class="anya-westalis" src="../assets/dipakai/landing/anyawestalis.png">
+        </div>
+        <div class="slide">
+            <img class="anya-family" src="../assets/dipakai/landing/anyafamily.png">
+        </div>
+
+        <!-- Slider Arrows -->
+        <div class="panahkiri" id="prev">
+            <img src="../assets/dipakai/landing/panahkiri.svg">
+        </div>
+        <div class="panahkanan" id="next">
+            <img src="../assets/dipakai/landing/panahkanan.svg">
+        </div>
+    </section>
+
+    <!-- Products + Shop -->
+    <div id="prd">
+        <h3 class="op">OUR PRODUCTS</h3>
+        <img class="produk" src="../assets/dipakai/landing/products.svg">
+        <button class="shop-now-button" onclick="redirectToShop()">SHOP NOW</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../assets/dipakai/landing/footer.svg">
+    </footer>
+
+    <!-- Popup Messages -->
+    <div class="popup" id="popup">
+        <img class="popup-image" src="../assets/dipakai/landing/mesage.png">
+    </div>
+
+    <div class="popup2" id="popup2">
+        <img class="popup-image2" src="../assets/dipakai/landing/popupcart.png">
+        <span class="close-popup" onclick="closePopup()">x</span>
+    </div>
+
+    <!-- Popup Trigger Image -->
+    <img class="popup-imagefix" src="../assets/dipakai/landing/popup.svg">
+
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+</html>

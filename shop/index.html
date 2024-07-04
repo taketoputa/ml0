@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anya Apparel</title>
+    <link rel="stylesheet" href="./style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img class="logo-nav" src="../assets/dipakai/nav/logo.svg"> 
+        <ul>
+            <li class="nav-home"><a href="../landing/index.html">home</a></li>
+            <li class="nav-shop"><a href="../shop/index.html">shop</a></li>
+        </ul>
+        <div class="nav-icon">
+            <a href="../login/index.html"><img class="nav-login-button" src="../assets/dipakai/nav/icon-orang.svg"></a>
+            <a href="#"><img class="nav-cart-button" src="../assets/dipakai/nav/icon-tas.svg"></a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="product-grid"></div>
+    <div class="cart-summary">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Minus</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div>
+            <p>Total: $<span id="total-amount">0</span></p>
+            <label for="voucher-select">Voucher:</label>
+            <select id="voucher-select"><option value="">Select a voucher</option></select>
+            <button class="gacha-button">Gacha a Voucher</button>
+            <p>Gacha Chances: <span id="gacha-chances">0</span></p>
+            <button class="cancel-button">Cancel</button>
+        </div>
+    </div>
+    <div class="voucher-result"></div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="../assets/dipakai/landing/footer.svg">
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

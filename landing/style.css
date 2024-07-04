@@ -1,0 +1,273 @@
+/* -------------------------------------------------- ALL--------------------------------------------- */
+:root{
+    --green: #8DA99B;
+    --baby-pink: #FAB3AD;
+    --brown: #2C2827;
+    --red: #610A10;
+    --green2: #57675C;
+}
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #FAFBFC;
+}
+
+/* ------------------------------------------------ NAVBAR --------------------------------------------- */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 185px;
+    gap: 708px;
+    position: absolute;
+    width: 2732px;
+    height: 192px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 23px 48.8px rgba(0, 0, 0, 0.11);
+    position: fixed;
+    z-index: 1000; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 75px;
+    width: 529px;
+    height: 40px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 184px;
+    height: 192px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.nav-home{
+    width: 117px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #C04747;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.nav-shop{
+    width: 100px;
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #C04747;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.nav-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 99px;
+    width: 200.66px;
+    height: 54.33px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.nav-login-button{
+    width: 50px;
+    height: 50px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.nav-cart-button{
+    width: 51.66px;
+    height: 54.33px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.nav-home:hover, .nav-shop:hover {
+    filter: brightness(0);
+}
+
+.nav-login-button:hover, .nav-cart-button:hover {
+    filter: brightness(0);
+}
+/* ------------------------------------------------ BODY --------------------------------------------- */
+/* SLIDER */
+.slide {
+    position: absolute;
+    width: 2020px;
+    height: 1097px;
+    left: 356px;
+    top: 302px;
+    filter: drop-shadow(15px 22px 34.6px rgba(0, 0, 0, 0.23));
+}
+.panahkiri{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 414px;
+    top: 1230px;
+    border-radius: 122px;
+}
+.panahkanan{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: 2218px;
+    top: 1230px;
+    border-radius: 91px;
+}
+/* OUR PRODUCTS */
+.op{
+    position: absolute;
+    width: 474px;
+    height: 63px;
+    left: 1129px;
+    top: 1553px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 59px;
+    line-height: 106.04%;
+    text-align: center;
+    color: #000000;
+}
+.produk{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 33px;
+    position: absolute;
+    width: 2074.27px;
+    height: 511px;
+    left: 356px;
+    top: 1767px;
+}
+.shop-now-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 31px 43px;
+    gap: 10px;
+
+    width: 386px;
+    height: 118px;
+    position: absolute;
+    left: 1173px;
+    top: 2366px;
+
+    background: #C04747;
+    background-size: cover;
+    box-shadow: 6px 7px 12.3px rgba(0, 0, 0, 0.25);
+    border-radius: 124px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 53px;
+    line-height: 106.04%;
+    text-align: center;
+}
+.shop-now-button:hover {
+    opacity: 0.8;
+}
+
+/* ------------------------------------------------ FOOTER --------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 966px;
+    gap: 10px;
+    position: absolute;
+    width: 2732px;
+    height: 89px;
+    left: 0px;
+    background: #2C2827;
+    
+    top: 2723px;
+    /* position: fixed;
+    bottom: 0;
+    z-index: 1000; */
+}
+
+
+/* ------------------------------------------------ FPOPUP --------------------------------------------- */
+
+.popup-imagefix{
+    position: absolute;
+    left: 3%;
+    right: 74.63%;
+    top: 92.34%;
+    bottom: 2.05%;
+}
+.popup,
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+.popup-image,
+.popup-image2 {
+    max-width: 100%;
+    height: auto;
+}
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+
