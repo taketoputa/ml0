@@ -13,7 +13,7 @@
     <nav>
         <img class="logo-nav" src="../assets/dipakai/nav/logo.svg"> 
         <ul>
-            <li class="nav-home"><a href="../landing/index.html">home</a></li>
+            <li class="nav-home"><a href="../index.html">home</a></li>
             <li class="nav-shop"><a href="../shop/index.html">shop</a></li>
         </ul>
         <div class="nav-icon">
@@ -23,26 +23,29 @@
     </nav>
 
     <!-- Body -->
+
     <div class="product-grid"></div>
-    <div class="cart-summary">
-        <table>
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Minus</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <div>
-            <p>Total: $<span id="total-amount">0</span></p>
-            <label for="voucher-select">Voucher:</label>
-            <select id="voucher-select"><option value="">Select a voucher</option></select>
-            <button class="gacha-button">Gacha a Voucher</button>
-            <p>Gacha Chances: <span id="gacha-chances">0</span></p>
-            <button class="cancel-button">Cancel</button>
+    <div>
+        <div class="cart-summary">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Minus</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div>
+                <p>Total: $<span id="total-amount">0</span></p>
+                <label for="voucher-select">Voucher:</label>
+                <select id="voucher-select"><option value="">Select a voucher</option></select>
+                <button class="gacha-button">Gacha a Voucher</button>
+                <p>Gacha Chances: <span id="gacha-chances">0</span></p>
+                <button class="cancel-button">Cancel</button>
+            </div>
         </div>
     </div>
     <div class="voucher-result"></div>

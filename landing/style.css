@@ -129,7 +129,7 @@ nav ul li a {
 }
 /* ------------------------------------------------ BODY --------------------------------------------- */
 /* SLIDER */
-.slide {
+.slide{
     position: absolute;
     width: 2020px;
     height: 1097px;
@@ -168,6 +168,7 @@ nav ul li a {
     text-align: center;
     color: #000000;
 }
+
 .produk{
     display: flex;
     flex-direction: row;
@@ -180,6 +181,30 @@ nav ul li a {
     left: 356px;
     top: 1767px;
 }
+
+.produk1:hover {
+    transform: scale(2.1);
+    transition: transform 0.1s ease;
+}
+.produk2:hover {
+    transform: scale(2.1);
+    transition: transform 0.1s ease;
+}
+.produk3:hover {
+    transform: scale(2.1);
+    transition: transform 0.1s ease;
+}
+.produk4:hover {
+    transform: scale(2.1);
+    transition: transform 0.1s ease;
+}
+.produk5:hover {
+    transform: scale(2.1);
+    transition: transform 0.1s ease;
+}
+
+
+
 .shop-now-button {
     display: flex;
     flex-direction: row;
@@ -210,6 +235,16 @@ nav ul li a {
 }
 .shop-now-button:hover {
     opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+.con{
+    position: absolute;
+    width: 2732px;
+    height: 1163px;
+    left: 0px;
+    top: 2572px;
 }
 
 /* ------------------------------------------------ FOOTER --------------------------------------------- */
@@ -226,23 +261,16 @@ footer {
     left: 0px;
     background: #2C2827;
     
-    top: 2723px;
-    /* position: fixed;
+    /* top: 2723px; */
+    position: fixed;
     bottom: 0;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 
 /* ------------------------------------------------ FPOPUP --------------------------------------------- */
 
-.popup-imagefix{
-    position: absolute;
-    left: 3%;
-    right: 74.63%;
-    top: 92.34%;
-    bottom: 2.05%;
-}
-.popup,
+
 .popup2 {
     display: none;
     position: fixed;
@@ -256,7 +284,6 @@ footer {
     z-index: 1000;
     text-align: center;
 }
-.popup-image,
 .popup-image2 {
     max-width: 100%;
     height: auto;
@@ -270,4 +297,178 @@ footer {
     color: #333;
 }
 
+// ------------------------------------------------------------------- FORM ---------------------------------------------------
+.rectangle {
+    width: 2732px;
+    height: 1px;
+    left: 0px;
+    top: 2572px;
+}
 
+.forrm {
+    position: absolute;
+    width: 1167px;
+    height: 978px;
+    left: 0px;
+    top: 2670px;
+    z-index: 1000;
+    padding: 126px;
+    background-color: transparent;
+}
+
+.forrm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    
+}
+
+.forrm input, .forrm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 4px solid #FFFFFF;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.send{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 31px 43px;
+    gap: 10px;
+    border:none;
+
+    background: #FFFFFF;
+    box-shadow: 6px 7px 12.3px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send:hover {
+    background-color: transparent;
+}
+
+.text-name{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.text-phone{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.text-email{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+.text-message{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+#text-send{
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 33px;
+        color: #C04747;
+}
+
+
+
+.ig a{
+    position: absolute;
+    left: 88%;
+    right: 9.52%;
+    top: 129.3%;
+    bottom: 55.55%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2C2827;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.ig a{
+    position: absolute;
+    left: 88%;
+    right: 9.52%;
+    top: 129.3%;
+    bottom: 55.55%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2C2827;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.fc a{
+    position: absolute;
+    left: 88%;
+    right: 9.52%;
+    top: 132.5%;
+    bottom: 55.55%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2C2827;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.line a{
+    position: absolute;
+    left: 88%;
+    right: 9.52%;
+    top: 135.4%;
+    bottom: 55.55%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 106.04%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #2C2827;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.line a:hover {
+    filter: brightness(999);
+}
+.ig a:hover{
+    filter: brightness(999);
+}
+
+.fc a:hover {
+    filter: brightness(999);
+}

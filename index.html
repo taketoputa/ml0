@@ -10,14 +10,14 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <img class="logo-nav" src="../assets/dipakai/nav/logo.svg"> 
+        <img class="logo-nav" src="assets/dipakai/nav/logo.svg"> 
         <ul>
-            <li class="nav-home"><a href="../landing/index.html">home</a></li>
-            <li class="nav-shop"><a href="../shop/index.html">shop</a></li>
+            <li class="nav-home"><a href="index.html">home</a></li>
+            <li class="nav-shop"><a href="shop/index.html">shop</a></li>
         </ul>
         <div class="nav-icon">
-            <a href="../login/index.html"><img class="nav-login-button" src="../assets/dipakai/nav/icon-orang.svg"></a>
-            <a href="#" class="nav-cart-button"><img src="../assets/dipakai/nav/icon-tas.svg"></a>
+            <a href="login/index.html"><img class="nav-login-button" src="assets/dipakai/nav/icon-orang.svg"></a>
+            <a href="#" class="nav-cart-button"><img src="assets/dipakai/nav/icon-tas.svg"></a>
         </div>
     </nav>
 
@@ -25,49 +25,75 @@
     <section>
         <!-- Slider Images -->
         <div class="slide">
-            <img class="anya-jungle" src="../assets/dipakai/landing/anyajungle.png">
+            <img class="anya-jungle" src="assets/dipakai/landing/anyajungle.png">
         </div>
         <div class="slide">
-            <img class="anya-westalis" src="../assets/dipakai/landing/anyawestalis.png">
+            <img class="anya-westalis" src="assets/dipakai/landing/anyawestalis.png">
         </div>
         <div class="slide">
-            <img class="anya-family" src="../assets/dipakai/landing/anyafamily.png">
+            <img class="anya-family" src="assets/dipakai/landing/anyafamily.png">
         </div>
 
         <!-- Slider Arrows -->
         <div class="panahkiri" id="prev">
-            <img src="../assets/dipakai/landing/panahkiri.svg">
+            <img src="assets/dipakai/landing/panahkiri.svg">
         </div>
         <div class="panahkanan" id="next">
-            <img src="../assets/dipakai/landing/panahkanan.svg">
+            <img src="assets/dipakai/landing/panahkanan.svg">
         </div>
     </section>
 
     <!-- Products + Shop -->
     <div id="prd">
         <h3 class="op">OUR PRODUCTS</h3>
-        <img class="produk" src="../assets/dipakai/landing/products.svg">
+        <div class="produk">
+        <img class="produk1" src="assets/dipakai/landing/essential.png">
+        <img class="produk2" src="assets/dipakai/landing/tshirt.png">
+        <img class="produk3" src="assets/dipakai/landing/hoodie.png">
+        <img class="produk4" src="assets/dipakai/landing/merch.png">
+        <img class="produk5" src="assets/dipakai/landing/weapon.png">
+        </div>
         <button class="shop-now-button" onclick="redirectToShop()">SHOP NOW</button>
+    </div>
+
+    <!-- about us -->
+    <div class="con">
+        <img src="assets/dipakai/landing/contact.png">
     </div>
 
     <!-- Footer -->
     <footer>
-        <img src="../assets/dipakai/landing/footer.svg">
+        <img src="assets/dipakai/landing/footer.svg">
     </footer>
 
-    <!-- Popup Messages -->
-    <div class="popup" id="popup">
-        <img class="popup-image" src="../assets/dipakai/landing/mesage.png">
-    </div>
-
+    <!-- Popup Cart -->
     <div class="popup2" id="popup2">
-        <img class="popup-image2" src="../assets/dipakai/landing/popupcart.png">
+        <img class="popup-image2" src="assets/dipakai/landing/popupcart.png">
         <span class="close-popup" onclick="closePopup()">x</span>
     </div>
 
-    <!-- Popup Trigger Image -->
-    <img class="popup-imagefix" src="../assets/dipakai/landing/popup.svg">
+    <!-- Write Your Message -->
+    <div class="rectangle"></div>
 
+    <form class="forrm">
+        <label class="text-name" for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label class="text-email" for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label class="text-phone" for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label class="text-message" for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <button id="text-send" class="send">Send</button> 
+    </form>
+
+    <p class="ig"><a href="#">anyaapparel</a></p>
+    <p class="fc"><a href="#">anyaapparel</a></p>
+    <p class="line"><a href="#">anyaapparel</a></p>
 
     <!-- JS -->
     <script src="landing/script.js"></script>

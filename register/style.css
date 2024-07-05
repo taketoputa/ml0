@@ -1,6 +1,13 @@
+:root {
+    --green: #8DA99B;
+    --baby-pink: #FAB3AD;
+    --brown: #2C2827;
+    --red: #610A10;
+    --green2: #57675C;
+}
+
 *,
-html,
-body {
+html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,19 +15,175 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #FAFBFC;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
-.signup-text {
+
+.logintext {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.logintext h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--brown);
+    margin-bottom: 30px;
     text-align: center;
+}
+
+.input-container {
+    position: relative;
     margin-bottom: 20px;
 }
 
+.input-container input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--brown);
+}
+
+.actions a {
+    font-size: 14px;
+    color: var(--brown);
+    text-decoration: none;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--green2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signin-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin-link p {
+    font-size: 14px;
+    color: var(--brown);
+}
+
+.signin-link a {
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 

@@ -1,70 +1,161 @@
+:root{
+  --green: #8DA99B;
+  --baby-pink: #FAB3AD;
+  --brown: #2C2827;
+  --red: #610A10;
+  --green2: #57675C;
+}
 *,
 html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
-body {
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body{
+  background-color: #FAFBFC;
 }
 
-/* -------------------------------------------------- NAVBAR ------------------------------------------------ */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// PRODUK
+.product-name {
+  font-family: 'Poppins';
+  font-size: 779px; 
+  color: var(--brown); 
 }
-nav ul {
-  list-style: none;
+
+
+
+
+
+/* -------------------------------------------------- NAVBAR ------------------------------------------------ */
+nav{
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 185px;
+  gap: 708px;
+  position: absolute;
+  width: 2732px;
+  height: 192px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 23px 48.8px rgba(0, 0, 0, 0.11);
+  position: fixed;
+  z-index: 1000; 
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 75px;
+  width: 529px;
+  height: 40px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 nav ul li {
-  display: inline;
+  list-style: none;
 }
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: inherit;
 }
-nav .nav-icon {
+.logo-nav{
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 184px;
+  height: 192px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.nav-home{
+  width: 117px;
+  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 106.04%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #C04747;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.nav-shop{
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 106.04%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #C04747;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.nav-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 99px;
+  width: 200.66px;
+  height: 54.33px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.nav-login-button{
+  width: 50px;
+  height: 50px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.nav-cart-button{
+  width: 51.66px;
+  height: 54.33px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.nav-home:hover, .nav-shop:hover {
+  filter: brightness(0);
 }
 
-main {
-  flex: 1;
-  padding: 20px;
+.nav-login-button:hover, .nav-cart-button:hover {
+  filter: brightness(0);
 }
-
-section {
-  margin-bottom: 40px;
-}
-
 /* ----------------------------------------------- PRODUCTS  ------------------------------------------------ */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 100px
+  width: 1167px;
+  height: 2000px;
+  left: 0px;
+  padding: 300px;
+  background-color: transparent;
 }
 .product-card {
   background: #fff;
-  padding: 10px;
+  padding: 99px;
   border: 1px solid #ddd;
   border-radius: 5px;
   text-align: center;
 }
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
+
 .add-to-cart {
   background: #28a745;
   color: #fff;
@@ -73,7 +164,6 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 /* ----------------------------------------------- GACHA ----------------------------------------------------- */
 .gacha-button {
@@ -133,8 +223,20 @@ section {
 
 /* -------------------------------------------------- FOOTER ------------------------------------------------------------------ */
 footer {
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 966px;
+  gap: 10px;
+  position: absolute;
+  width: 2732px;
+  height: 89px;
+  left: 0px;
+  background: #2C2827;
+  
+  /* top: 2723px; */
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
 }

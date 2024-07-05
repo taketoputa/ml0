@@ -1,6 +1,6 @@
 // Shop
 function redirectToShop() {
-    window.location.href = "../shop/index.html";
+    window.location.href = "shop/index.html";
 }
 
 // Open Cart Popup
@@ -15,23 +15,9 @@ function closePopup() {
     popup.style.display = 'none';
 }
 
-///////////////////////////////////////////////////////////////////////////////////
-
 // Icon Cart di Klik
 var cartIcon = document.querySelector('.nav-cart-button');
 cartIcon.addEventListener('click', openPopup);
-
-// Message di Sentuh
-var triggerImage = document.querySelector('.popup-imagefix');
-var popup = document.getElementById('popup');
-        
-triggerImage.addEventListener('mouseover', function() {
-popup.style.display = 'block';
-});// Mouse In
-
-triggerImage.addEventListener('mouseout', function() {
-popup.style.display = 'none';
-});// Mouse Out
 
 //////////////////////////////////////////////////////////////////////////////////
 

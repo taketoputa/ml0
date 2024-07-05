@@ -1,8 +1,3 @@
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
         { id: 1, name: 'A', price: 10.00 },
@@ -11,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, name: 'D', price: 40.00 },
         { id: 5, name: 'E', price: 50.00 },
         { id: 6, name: 'F', price: 60.00 },
-        { id: 7, name: 'G', price: 70 },
+        { id: 7, name: 'G', price: 70},
         { id: 8, name: 'H', price: 80.00 },
     ];
 
@@ -22,12 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
             productCard.classList.add('product-card');
     
             productCard.innerHTML = `
-                <img src="../assets/dipakai/product/example.jpg" alt="${product.name}">
                 <p>${product.name}</p>
                 <p>$${product.price.toFixed(2)}</p>
                 <button class="add-to-cart" data-id="${product.id}">+</button>
             `;
-    
+
             productGrid.appendChild(productCard);
         });
 
